@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Di Oliver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ======================= -->
+<!-- MENU -->
+<!-- ======================= -->
+
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="bandas.html">Minhas bandas</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</nav>
+
+<!-- ======================= -->
+<!-- CONTEÚDO PRINCIPAL -->
+<!-- ======================= -->
+
+<div class="conteudo">
+
+    <h1>Olá, que legal ter você por aqui! 🤘🏼</h1>
+
+    <p>Fiz esse site pensando em trazer de forma resumida<br> 
+        algumas informações do meu lado como músico. <br>
+        Vou deixar dois links em botões executáveis aqui. <br>
+        O primeiro é do meu canal do Youtube.<br>
+        O segundo é de uma música autoral minha. 
+    </p>
+
+    <!-- BOTÕES -->
+    <div class="botoes">
+        <a href="https://www.youtube.com/@dioliverrock" target="_blank">
+            <button>Meu Youtube</button>
+        </a>
+
+        <button onclick="toggleMusica()" id="botaoMusica">
+            Tocar música 🎵
+        </button>
+    </div>
+
+    <p> Espero que goste do que vai encontrar por aqui <br>
+    Nos vemos por ai!!! </p>
+
+    <div class="galeria">
+    <img src="imagens/sobremim (1).png" alt="">
+    <img src="imagens/sobremim (2).png" alt="">
+    <img src="imagens/sobremim (3).png" alt="">
+    <img src="imagens/sobremim (4).png" alt="">
+</div>
+
+</div>
+
+<!-- ======================= -->
+<!-- MÚSICA -->
+<!-- ======================= -->
+
+<audio id="musica" loop>
+    <source src="Vivendo Pra Vencer - Di Oliver 44.1kHz 16 bits.wav" type="audio/mpeg">
+</audio>
+
+<script>
+function toggleMusica() {
+    var audio = document.getElementById("musica");
+    var botao = document.getElementById("botaoMusica");
+
+    if (audio.paused) {
+        audio.play();
+        botao.innerText = "Pausar música ⏸";
+    } else {
+        audio.pause();
+        botao.innerText = "Tocar Vivendo Pra Vencer 🎵";
+    }
+}
+</script>
+
+<!-- ======================= -->
+<!-- RODAPÉ -->
+<!-- ======================= -->
+
+<footer class="rodape">
+    <h2>SIGA NAS REDES SOCIAIS @DIOLIVER</h2>
+    <p>© 2026 Di Oliver - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
