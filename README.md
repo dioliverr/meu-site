@@ -5,9 +5,7 @@ Sobre o projeto
 O site foi desenvolvido para divulgar minha carreira como músico, cantor e artista geek.
 
 Tecnologias utilizadas
-HTML5
-CSS3
-JavaScript
+HTML5, CSS3 e JavaScript.
 
 Funcionalidades
 Navegação entre páginas (Sobre, Bandas, Agenda e Contato)
